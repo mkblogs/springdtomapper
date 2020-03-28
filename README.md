@@ -28,8 +28,8 @@ public interface AccountMapper {
 	Account AccountDTOtoAccount(AccountDTO accountDTO);
 }
 ````
+ Map Stuck Plugin to Generate Code 
 ````maven
- Map Stuck Plugin to generate code 
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-compiler-plugin</artifactId>
