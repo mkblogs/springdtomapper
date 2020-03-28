@@ -27,4 +27,28 @@ public interface AccountMapper {
 	    })
 	Account AccountDTOtoAccount(AccountDTO accountDTO);
 }
-````		
+````
+````maven
+ Map Stuck Plugin to generate code 
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <configuration>
+        <source>1.8</source>
+        <target>1.8</target>
+        <annotationProcessorPaths>
+            <path>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>1.3.1.Final</version>
+            </path>
+            <path>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.4</version>
+            </path>
+        </annotationProcessorPaths>
+    </configuration>
+</plugin>
+````
+
